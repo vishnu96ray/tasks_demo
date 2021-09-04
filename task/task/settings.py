@@ -31,9 +31,9 @@ MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 SECRET_KEY = 'django-insecure-!tjq62a#3k#_9)367a06s27ey0tk%^&9(k9kjw-(o90!p)wl#a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', 'schooldemo111.herokuapp.com/']
 
 
 # Application definition
@@ -64,8 +64,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',  
 ]
 
 ROOT_URLCONF = 'task.urls'
